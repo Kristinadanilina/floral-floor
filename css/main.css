@@ -15,9 +15,16 @@ body {
 
 .site-header {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  color:#473C2F;
+
 
 }
+
+
+
 
 .heading {
   color: #473C2F;
@@ -28,16 +35,16 @@ body {
 }
 
 .flower-img {
-  width: 688px;
-  height: 569px;
+  width: 500px;
+  height: 414px;
   transition-duration: 0.5s;
   transition-property: all;
 }
 
 
 .flower-img:hover {
-  width: 500px;
-  height: 414px;
+  width: 688px;
+  height: 569px;
 }
 
 
@@ -50,22 +57,87 @@ body {
   border: none;
   font-size: 30px;
   text-align: center;
-  margin: 0 0 0 80px;
+  margin: 10px 0 0 0;
+  transition: background-color 0.6s, transform 0.5s;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.button-one:hover {
+  background-color:#ded5ce;
+  color: #473C2F;
+  transform: scale(110%);
+  border: 2px solid #473C2F;
+   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 h1,h2 {
   color:#473C2F;
   display: inline-block;
   font-family: "Roboto Condensed", sans-serif;
+  font-size: 40px;
 
 }
+
+.logo {
+  font-family: "Roboto Condensed", sans-serif;
+
+  font-size: 30px;
+}
+
+.cart-and-heart {
+  width: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
 
 .text {
   font-family: "Montserrat", sans-serif;
   color:#473C2F;
+  font-size: 20px;
 
 }
 
 .second-section {
   background:#ead9c4;
+}
+
+h2 {
+  margin: 40px 0 0 40px;
+}
+
+.features {
+  margin: 10px 0 0 40px;
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  justify-content: space-between;
+}
+
+.flowers-room {
+  margin:  40px 0 0 0;
+  display: flex;
+  justify-content: center;
+}
+ .room {
+   margin: 0 0 0 20px;
+ }
+
+.fourth-section{
+background-color: #805d52;
+}
+
+.footer-head {
+  margin: 0;
+}
+
+.text-bottom {
+  color:white;
+  font-size: 17px;
+
+}
+
+.information {
+  display: flex;
+  justify-content: space-evenly;
 }
