@@ -24,8 +24,6 @@ body {
 }
 
 
-
-
 .heading {
   color: #473C2F;
   display: flex;
@@ -80,7 +78,6 @@ h1,h2 {
 
 .logo {
   font-family: "Roboto Condensed", sans-serif;
-
   font-size: 30px;
 }
 
@@ -120,7 +117,7 @@ h2 {
   justify-content: center;
 }
  .room {
-   margin: 0 0 0 20px;
+   margin: 0 0 20px 20px;
  }
 
 .fourth-section{
@@ -131,13 +128,73 @@ background-color: #805d52;
   margin: 0;
 }
 
+.footer-head {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
 .text-bottom {
   color:white;
-  font-size: 17px;
+  font-size: 20px;
+  line-height: 30px;
+  font-family: "Montserrat", sans-serif;
+  opacity: 0.8;
+
 
 }
 
 .information {
   display: flex;
   justify-content: space-evenly;
+}
+
+.contacts {
+  line-height: 65px;
+
+}
+
+
+.icon {
+  margin: 0 0 0 15px;
+}
+
+a{
+  font-size: 23px;
+  color:white;
+  text-decoration: none;
+  margin: 0 0 0 15px;
+}
+.konopka{
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 170px 0 0;
+}
+
+.button-two {
+  background-color:#805d52;
+  color: white;
+  border: 2px solid white;
+  border-radius: 20px;
+  height: 50px;
+  width: 200px;
+  font-size: 20px;
+  text-align: center;
+  animation-name:button;
+  animation-duration: 4s;
+  animation-delay: 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes button {
+  from {
+    width: 200px;
+
+  }
+
+50% {
+  width: 230px;
+}
+
+to {
+  width: 200px;
+
 }
