@@ -5,10 +5,9 @@ body {
   overflow-x: hidden;
 }
 
-
-
-.first-section, .third-section {
-  background:#d0bdaa;
+.first-section,
+.third-section {
+  background: #d0bdaa;
 
 }
 
@@ -16,11 +15,10 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
   font-family: "Montserrat", sans-serif;
-  color:#473C2F;
+  color: #473C2F;
   text-decoration: none;
-
-
 }
 
 
@@ -34,16 +32,25 @@ body {
 
 .flower-img {
   width: 500px;
+  max-width: 100%;
   height: 414px;
   transition-duration: 0.5s;
   transition-property: all;
+  
+  @media (max-width: 688px) {
+    height: auto;
+  }
 }
 
 
-.flower-img:hover {
-  width: 688px;
-  height: 569px;
+
+@media (min-width: 688px) {
+  .flower-img:hover {
+    width: 688px;
+    height: 569px;
+  }
 }
+
 
 .catalog {
   color: white;
@@ -52,7 +59,7 @@ body {
   text-decoration: none;
 }
 
-.catalog:hover{
+.catalog:hover {
   color: #473C2F;
 }
 
@@ -70,14 +77,16 @@ body {
 }
 
 .button-one:hover {
-  background-color:#ded5ce;
+  color: #473C2F;
+  background-color: #ded5ce;
   transform: scale(110%);
   border: 2px solid #473C2F;
-   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
-h1,h2 {
-  color:#473C2F;
+h1,
+h2 {
+  color: #473C2F;
   display: inline-block;
   font-family: "Roboto Condensed", sans-serif;
   font-size: 40px;
@@ -98,13 +107,13 @@ h1,h2 {
 
 .text {
   font-family: "Montserrat", sans-serif;
-  color:#473C2F;
+  color: #473C2F;
   font-size: 20px;
 
 }
 
 .second-section {
-  background:#ead9c4;
+  background: #ead9c4;
 }
 
 h2 {
@@ -119,17 +128,23 @@ h2 {
   justify-content: space-between;
 }
 
+.kaktus-img {
+  max-width: 100%;
+}
+
 .flowers-room {
-  margin:  40px 0 0 0;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  margin: 40px 0 0 0;
 }
- .room {
-   margin: 0 0 20px 20px;
- }
 
-.fourth-section{
-background-color: #805d52;
+.room {
+  margin: 0 0 20px 20px;
+}
+
+.fourth-section {
+  background-color: #805d52;
 }
 
 .footer-head {
@@ -141,7 +156,7 @@ background-color: #805d52;
 }
 
 .text-bottom {
-  color:white;
+  color: white;
   font-size: 20px;
   line-height: 30px;
   font-family: "Montserrat", sans-serif;
@@ -153,6 +168,8 @@ background-color: #805d52;
 .information {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .contacts {
@@ -165,20 +182,21 @@ background-color: #805d52;
   margin: 0 0 0 15px;
 }
 
-.tel{
+.tel {
   font-size: 23px;
-  color:white;
+  color: white;
   text-decoration: none;
   margin: 0 0 0 15px;
 }
-.konopka{
+
+.konopka {
   display: flex;
   justify-content: flex-end;
   margin: 0 170px 0 0;
 }
 
 .button-two {
-  background-color:#805d52;
+  background-color: #805d52;
   color: white;
   border: 2px solid white;
   border-radius: 20px;
@@ -186,7 +204,7 @@ background-color: #805d52;
   width: 200px;
   font-size: 20px;
   text-align: center;
-  animation-name:button;
+  animation-name: button;
   animation-duration: 4s;
   animation-delay: 0.5s;
   animation-iteration-count: infinite;
@@ -198,11 +216,24 @@ background-color: #805d52;
 
   }
 
-50% {
-  width: 230px;
+  50% {
+    width: 230px;
+  }
+
+  to {
+    width: 200px;
+
+  }
 }
 
-to {
-  width: 200px;
+.carousel-container {
+  background-color: #ead9c4;
+}
 
+.carousel-item-content {
+  height: 260px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
 }
